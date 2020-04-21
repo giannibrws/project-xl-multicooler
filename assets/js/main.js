@@ -299,4 +299,9 @@
     });
   }
 
+    // Initi AOS
+    AOS.init({
+        duration: 600
+    });
+
 })(jQuery);

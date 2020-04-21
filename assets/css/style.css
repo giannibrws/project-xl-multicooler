@@ -117,6 +117,62 @@ body {
   line-height: 22px;
 }
 
+/* BEGIN FAQ */
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: #7cc576;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-right: 25px;
+}
+
+.faq .faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #7cc576;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+/* END FAQ */
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
@@ -635,7 +691,7 @@ div#preloader {
 /* Normal desktop :992px. */
 @media (min-width: 1400px) and (max-width: 1920px) {
   .slider-content {
-    padding: 340px 0;
+    padding: 200px 0;
   }
 }
 
@@ -897,7 +953,7 @@ preview-2
 
 .niceties.preview-2 {
   position: relative;
-  height: 100%;
+  height: 85%;
 }
 
 /*--------------------------------------------------------------
@@ -1846,7 +1902,7 @@ preview-2
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-.blog-area {
+.faq-area {
   height: auto;
   width: 100%;
 }
@@ -2506,7 +2562,7 @@ span.email-notes {
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
   .slider-content {
-    padding: 146px 0;
+    padding: 50px 0;
   }
   .work-right-text {
     padding: 40px 0;
@@ -2708,7 +2764,7 @@ span.email-notes {
     margin-bottom: 0;
   }
   .page-area .slider-content {
-    padding: 500px 0;
+    padding: 60px 0;
   }
   .search-option input {
     width: 74%;
