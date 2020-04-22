@@ -1,5 +1,9 @@
 <?php
+session_start();
 include_once "assets/data-storage.php";
+require 'vendor/autoload.php';
+
+
 ?>
 
 
@@ -47,6 +51,7 @@ include_once "assets/data-storage.php";
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+
 
 <body data-spy="scroll" data-target="#navbar-example">
 
@@ -543,25 +548,25 @@ include_once "assets/data-storage.php";
               <div class="form contact-form">
                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" value="" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" value="<?= isset($_POST['email']) ? $_POST['email'] : ' '?>" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please add a subject to your message" value="" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" value=""></textarea>
                     <div class="validate"></div>
                   </div>
                   <div class="mb-3">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message switchDisplay">Your message has been sent. Thank you!</div>
                   </div>
                   <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
@@ -672,7 +677,7 @@ include_once "assets/data-storage.php";
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <!-- END -->
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+ <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/appear/jquery.appear.js"></script>
   <script src="assets/vendor/knob/jquery.knob.js"></script>
   <script src="assets/vendor/parallax/parallax.js"></script>
@@ -688,3 +693,16 @@ include_once "assets/data-storage.php";
 </body>
 
 </html>
+
+
+
+<?php
+
+if($_SESSION['notifications']['form-succes']){
+    ?><script>
+        jQuery(document).ready(function($) {
+            $('.sent-message').show();
+        });</script><?php
+    $_SESSION['notifications']['form-succes'] = false;
+}
+?>

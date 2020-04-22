@@ -1,4 +1,7 @@
 <?php
+session_start();
+
+
   /**
   * Requires the "PHP Email Form" library
   * The "PHP Email Form" library is available only in the pro version of the template
@@ -6,36 +9,71 @@
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+require '../vendor/autoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+$mail = new PHPMailer();
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+//var_dump($_POST);
 
-  echo $contact->send();
+$post_data = array("name"=>"",
+    "email"=>"",
+    "subject"=>"",
+    "message"=>"");
+
+// Validate post data:
+
+$j =0;
+$keys = array_keys($post_data);
+foreach($_POST as $input){
+    $post_data[$keys[$j]] = filterInput($input);
+    $j++;
+}
+
+//var_dump($post_data);
+
+
+// USING SMTP:
+$mail->isSMTP();
+$mail->Host = 'smtp.mailtrap.io';
+$mail->SMTPAuth = true;
+$mail->Username = 'cb9bcf3791f19c';
+$mail->Password = '1ec1222361790c';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 2525;
+
+$mail->setFrom($post_data['email'], $post_data['name']);
+// Email senders email:
+$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+//  $mail->addReplyTo('towho@example.com', 'John Doe';
+
+$mail->isHTML(true);
+$mail->Subject = "PHPMailer SMTP test" . $post_data['subject'];
+$mail->addEmbeddedImage('https://thefinanser.com/wp-content/uploads/2015/12/6a01053620481c970b01b7c7617a9f970b-600wi.jpg', 'image_cid');
+$mail->Body = '<img src="../assets/img/coolbox/logo.jpg">' . $post_data['message'];
+$mail->AltBody = 'This is the plain text version of the email content';
+
+if(!$mail->send()){
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+}else {
+    $_SESSION['notifications']['form-succes'] = true;
+    echo 'Message has been sent';
+
+    header('Location: ../index.php#contact');
+    exit;
+}
+
+
+
+// form validation:
+function filterInput($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 ?>
