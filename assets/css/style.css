@@ -652,6 +652,31 @@ div#preloader {
   border: 1px solid #fff !important;
 }
 
+.img-logo{
+  width:150px;
+  height:50px;
+}
+
+.darkened{
+  filter: brightness(15%);
+}
+
+.img-logo-slider{
+  width:400px;
+  height:133px;
+  position: relative !important;
+  margin-left:6.3rem;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+
+
+
 .nivo-controlNav {
   bottom: 0;
   left: 0;
@@ -664,48 +689,27 @@ div#preloader {
   display: block;
 }
 
-.nivo-controlNav a {
-  background: transparent none repeat scroll 0 0;
-  border: 2px solid #fff;
-  box-shadow: none;
-  display: inline-block;
-  font-size: 0;
-  height: 2px;
-  margin: 5px 3px;
-  opacity: 1;
-  text-align: center;
-  text-indent: inherit;
-  vertical-align: top;
-  width: 20px;
-}
 
-.nivo-controlNav a:hover, .nivo-controlNav a.active {
-  background: #fff none repeat scroll 0 0;
-  border-color: #3EC1D5;
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-}
+
 
 /* Normal desktop :992px. */
 @media (min-width: 1400px) and (max-width: 1920px) {
   .slider-content {
-    padding: 200px 0;
+    padding: 140px 0;
   }
 }
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
   .slider-content {
-    padding: 144px 0;
+    padding: 120px 0;
   }
 }
 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
   .slider-content {
-    padding: 93px 0;
+    padding: 80px 0;
   }
   .layer-1-2 h1 {
     font-size: 22px;
@@ -774,182 +778,7 @@ preview-1
   display: none;
 }
 
-.preview-1 .nivoSlider a {
-  border: 0;
-  display: block;
-}
 
-.preview-1 .nivo-controlNav {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.preview-1 .nivo-controlNav a {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: url(../lib/nivo-slider/img/bullets.png) no-repeat;
-  text-indent: -9999px;
-  border: 0;
-  margin: 0 2px;
-}
-
-.preview-1 .nivo-controlNav a.active {
-  background-position: 0 -22px;
-}
-
-.preview-1 .nivo-directionNav a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url(../lib/nivo-slider/img/arrows.png) no-repeat;
-  text-indent: -9999px;
-  border: 0;
-  opacity: 0;
-  transition: all 200ms ease-in-out;
-}
-
-.preview-1:hover .nivo-directionNav a {
-  opacity: 1;
-}
-
-.nivo-prevNav {
-  left: 15px;
-}
-
-.nivo-nextNav {
-  right: 15px;
-}
-
-.preview-1 a.nivo-nextNav {
-  background-position: -30px 0;
-}
-
-.preview-1 .nivo-caption {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.preview-1 .nivo-caption a {
-  color: #fff;
-  border-bottom: 1px dotted #fff;
-}
-
-.preview-1 .nivo-caption a:hover {
-  color: #fff;
-}
-
-.preview-1 .nivo-controlNav.nivo-thumbs-enabled {
-  width: 100%;
-}
-
-.preview-1 .nivo-controlNav.nivo-thumbs-enabled a {
-  width: auto;
-  height: auto;
-  background: none;
-  margin-bottom: 5px;
-}
-
-.preview-1 .nivo-controlNav.nivo-thumbs-enabled img {
-  display: block;
-  width: 120px;
-  height: auto;
-}
-
-.preview-1 .nivo-controlNav {
-  position: relative;
-  z-index: 99999;
-  bottom: 68px;
-}
-
-.preview-1 .nivo-controlNav a {
-  border: 5px solid #fff;
-  display: inline-block;
-  height: 18px;
-  margin: 0 5px;
-  text-indent: -9999px;
-  width: 18px;
-  line-height: 8px;
-  background: #3c3c3c;
-  cursor: pointer;
-  position: relative;
-  z-index: 9;
-  border-radius: 100%;
-  opacity: 0;
-  z-index: -999;
-}
-
-.preview-1:hover .nivo-controlNav a {
-  opacity: 1;
-  z-index: 999999;
-}
-
-.preview-1 .nivo-controlNav a:hover, .preview-1 .nivo-controlNav a.active {
-  background: #000;
-  cursor: pointer;
-}
-
-/* -------------------------------------
-preview-2
----------------------------------------- */
-.preview-2 .nivoSlider:hover .nivo-directionNav a.nivo-prevNav {
-  left: 50px;
-}
-
-.preview-2 .nivoSlider:hover .nivo-directionNav a.nivo-nextNav {
-  right: 50px;
-}
-
-.preview-2 .nivoSlider .nivo-directionNav a.nivo-prevNav {
-  font-size: 0;
-}
-
-.preview-2 .nivoSlider .nivo-directionNav a.nivo-nextNav {
-  font-size: 0;
-}
-
-.preview-2 .nivo-directionNav a.nivo-prevNav::before {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #ffffff;
-  content: "";
-  cursor: pointer;
-  font: 300 50px/50px FontAwesome;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transition: all 300ms ease-in 0s;
-  z-index: 9;
-  font-weight: 100;
-  left: 0px;
-  width: 50px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  font-size: 30px;
-}
-
-.preview-2 .nivo-directionNav a.nivo-nextNav:hover:before, .preview-2 .nivo-directionNav a.nivo-prevNav:hover:before {
-  border-color: #3EC1D5;
-  color: #fff;
-  background: #3EC1D5;
-}
-
-.preview-2 .nivo-directionNav a.nivo-nextNav::before {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  color: #ffffff;
-  content: "";
-  cursor: pointer;
-  font: 100 30px/50px FontAwesome;
-  height: 50px;
-  position: absolute;
-  right: 0px;
-  text-align: center;
-  top: 50%;
-  transition: all 300ms ease-in 0s;
-  width: 50px;
-  z-index: 9;
-  font-size: 30px;
-}
 
 .niceties.preview-2 {
   position: relative;
@@ -1495,24 +1324,26 @@ preview-2
 }
 
 .pri_table_list li.check.cross::after {
-  content: "\f00d";
-  font-family: fontawesome;
+  content: "\✘";
+  font-family: "Font Awesome 5 Brands";
   font-size: 14px;
-  position: absolute;
+  position: absolute;
   right: 50px;
   top: 12px;
   color: indianred;
 }
 
 .pri_table_list li.check::after {
-  content: "\f00c";
-  font-family: fontawesome;
-  font-size: 14px;
-  position: absolute;
-  right: 50px;
-  top: 12px;
-  color: #3EC1D5;
-}
+
+   content: "\✔";
+  font-family: "Font Awesome 5 Brands";
+   font-size: 14px;
+   position: absolute;
+   right: 50px;
+   top: 12px;
+   color: #3EC1D5;
+ }
+
 
 .pri_table_list button {
   background: #444 none repeat scroll 0 0;
@@ -1944,7 +1775,7 @@ preview-2
 
 .blog-btn::after {
   content: "\f178";
-  font-family: fontawesome;
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   right: -20px;
   top: 1px;
@@ -2488,7 +2319,7 @@ span.email-notes {
 }
 
 .footer-icons {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .footer-contacts p span {

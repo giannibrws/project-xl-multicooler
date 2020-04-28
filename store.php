@@ -44,16 +44,15 @@
     <div class="container d-flex">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.php"><span>Multi</span>Cooler</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo"></a>
+
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li class="active"><a href="store.html">Store</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li class="active"><a href="store.php">Store</a></li>
+                <li><a href="index.php#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
 
 
@@ -84,7 +83,7 @@
                             </div>
                             <!-- layer 2 -->
                             <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                <h1 class="title2">MultiCooler</h1>
+                                <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo-slider"></a>
                             </div>
                             <!-- layer 3 -->
                             <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
@@ -302,53 +301,42 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="pri_table_list">
-                        <h3>basic <br /> <span>$80,00 </span></h3>
-                        <ol>
-                            <li class="check">Online system</li>
-                            <li class="check cross">Full access</li>
-                            <li class="check">Free apps</li>
-                            <li class="check">Multiple slider</li>
-                            <li class="check cross">Free domin</li>
-                            <li class="check cross">Support unlimited</li>
-                            <li class="check">Payment online</li>
-                            <li class="check cross">Cash back</li>
-                        </ol>
-                        <button>sign up now</button>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="pri_table_list active">
                         <span class="saleon">top sale</span>
-                        <h3>standard <br /> <span>$110,00</span></h3>
+                        <h3>standaard <br /> <span>$110,00</span></h3>
                         <ol>
-                            <li class="check">Online system</li>
-                            <li class="check">Full access</li>
-                            <li class="check">Free apps</li>
-                            <li class="check">Multiple slider</li>
-                            <li class="check cross">Free domin</li>
-                            <li class="check">Support unlimited</li>
-                            <li class="check">Payment online</li>
-                            <li class="check cross">Cash back</li>
+                            <li class="check">Standaard koelfunctie  </li>
+                            <li class="check">Beker/Bord/Bestekhouder  </li>
+                            <li class="check">Flessenopener (Add-on) </li>
+                            <li class="check">Multiple slider </li>
+                            <li class="check">Parasolhouder (Add-on) </li>
+                            <li class="check">Uitklapbare tafel (Add-on) </li>
+                            <li class="check ">Waterbestendigheid  </li>
+                            <li class="check cross">Mobiliteitopties  </li>
+                            <li class="check cross">Temperatuurmeter/display  </li>
+                            <li class="check cross">Powerbank optie </li>
                         </ol>
-                        <button>sign up now</button>
+                        <button>Order now</button>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="pri_table_list">
                         <h3>premium <br /> <span>$150,00</span></h3>
                         <ol>
-                            <li class="check">Online system</li>
-                            <li class="check">Full access</li>
-                            <li class="check">Free apps</li>
-                            <li class="check">Multiple slider</li>
-                            <li class="check">Free domin</li>
-                            <li class="check">Support unlimited</li>
-                            <li class="check">Payment online</li>
-                            <li class="check">Cash back</li>
+                            <li class="check">Standaard koelfunctie  </li>
+                            <li class="check">Beker/Bord/Bestekhouder  </li>
+                            <li class="check">Flessenopener (Add-on) </li>
+                            <li class="check">Multiple slider </li>
+                            <li class="check">Parasolhouder (Add-on) </li>
+                            <li class="check">Uitklapbare tafel (Add-on) </li>
+                            <li class="check ">Waterbestendigheid  </li>
+                            <li class="check">Mobiliteitopties  </li>
+                            <li class="check ">Temperatuurmeter/display  </li>
+                            <li class="check ">Powerbank optie </li>
                         </ol>
-                        <button>sign up now</button>
+                        <button>Order now</button>
                     </div>
                 </div>
             </div>
@@ -479,95 +467,10 @@
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
-<footer>
-    <div class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-content">
-                        <div class="footer-head">
-                            <div class="footer-logo">
-                                <h2><span>Multi</span>Cooler</h2>
-                            </div>
-
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
-                            <div class="footer-icons">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-google"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single footer -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-content">
-                        <div class="footer-head">
-                            <h4>information</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                            </p>
-                            <div class="footer-contacts">
-                                <p><span>Tel:</span> +123 456 789</p>
-                                <p><span>Email:</span> contact@example.com</p>
-                                <p><span>Working Hours:</span> 9am-5pm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single footer -->
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-content">
-                        <div class="footer-head">
-                            <h4>Instagram</h4>
-                            <div class="flicker-img">
-                                <a href="#"><img src="assets/img/portfolio/1.jpg" alt=""></a>
-                                <a href="#"><img src="assets/img/portfolio/2.jpg" alt=""></a>
-                                <a href="#"><img src="assets/img/portfolio/3.jpg" alt=""></a>
-                                <a href="#"><img src="assets/img/portfolio/4.jpg" alt=""></a>
-                                <a href="#"><img src="assets/img/portfolio/5.jpg" alt=""></a>
-                                <a href="#"><img src="assets/img/portfolio/6.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-area-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="copyright text-center">
-                        <p>
-                            &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-                        </p>
-                    </div>
-                    <div class="credits">
-                        <!--
-                        All the links in the footer should remain intact.
-                        You can delete the links only if you purchased the pro version.
-                        Licensing information: https://bootstrapmade.com/license/
-                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-                      -->
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer><!-- End  Footer -->
+    <footer>
+        <?php include_once("footer.php"); ?>
+    </footer>
+<!-- End  Footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <div id="preloader"></div>

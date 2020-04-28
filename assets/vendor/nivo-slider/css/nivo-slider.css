@@ -259,49 +259,14 @@ slider animation
     -ms-animation: fadeInRight 1500ms ease-in-out;
     animation: fadeInRight 1500ms ease-in-out;
 }
-.home1 .slider-2 h1{
-        -webkit-animation: fadeInLeft 500ms ease-in-out;
-    -moz-animation: fadeInLeft 500ms ease-in-out;
-    -ms-animation: fadeInLeft 500ms ease-in-out;
-    animation: fadeInLeft 500ms ease-in-out;
-}
-.home1 .slider-2 h3{
-        -webkit-animation: fadeInLeft 1500ms ease-in-out;
-    -moz-animation: fadeInLeft 1500ms ease-in-out;
-    -ms-animation: fadeInLeft 1500ms ease-in-out;
-    animation: fadeInLeft 1500ms ease-in-out;
-}
-/* -------------- Home 2  ---------------- */
-.home2 .slider-2 h1{
-        -webkit-animation: fadeInLeft 500ms ease-in-out;
-    -moz-animation: fadeInLeft 500ms ease-in-out;
-    -ms-animation: fadeInLeft 500ms ease-in-out;
-    animation: fadeInLeft 500ms ease-in-out;
-}
-.home2 .slider-2 h3{
-        -webkit-animation: fadeInLeft 1500ms ease-in-out;
-    -moz-animation: fadeInLeft 1500ms ease-in-out;
-    -ms-animation: fadeInLeft 1500ms ease-in-out;
-    animation: fadeInLeft 1500ms ease-in-out;
-}
+
 .home2 .layer-1{
 	 -webkit-animation: fadeInLeft 1500ms ease-in-out;
     -moz-animation: fadeInLeft 1500ms ease-in-out;
     -ms-animation: fadeInLeft 1500ms ease-in-out;
     animation: fadeInLeft 1500ms ease-in-out;
 }
-.home2 .layer-2{
-	-webkit-animation: bounceInUp 1000ms ease-in-out;
-    -moz-animation: bounceInUp 1000ms ease-in-out;
-    -ms-animation: bounceInUp 1000ms ease-in-out;
-    animation: bounceInUp 1000ms ease-in-out;
-}
-.home2 .layer-3{
-	 -webkit-animation: fadeInRight 1500ms ease-in-out;
-    -moz-animation: fadeInRight 1500ms ease-in-out;
-    -ms-animation: fadeInRight 1500ms ease-in-out;
-    animation: fadeInRight 1500ms ease-in-out;
-}
+
 .home2 .layer-1-1{
 	-webkit-animation: fadeInRight 1500ms ease-in-out;
     -moz-animation: fadeInRight 1500ms ease-in-out;
@@ -320,28 +285,4 @@ slider animation
     -moz-animation: fadeInLeft 1500ms ease-in-out;
     -ms-animation: fadeInLeft 1500ms ease-in-out;
     animation: fadeInLeft 1500ms ease-in-out;
-}
-.home3 .slider-2 h1{
-	-webkit-animation: bounceInUp 1000ms ease-in-out;
-    -moz-animation: bounceInUp 1000ms ease-in-out;
-    -ms-animation: bounceInUp 1000ms ease-in-out;
-    animation: bounceInUp 1000ms ease-in-out;
-}
-.home3 .slider-2 h3{
-	-webkit-animation: fadeInLeft 1500ms ease-in-out;
-    -moz-animation: fadeInLeft 1500ms ease-in-out;
-    -ms-animation: fadeInLeft 1500ms ease-in-out;
-    animation: fadeInLeft 1500ms ease-in-out;
-}
-.home3 .slider-3 h1{
-	-webkit-animation: fadeInRight 500ms ease-in-out;
-    -moz-animation: fadeInRight 500ms ease-in-out;
-    -ms-animation: fadeInRight 500ms ease-in-out;
-    animation: fadeInRight 500ms ease-in-out;
-}
-.home3 .slider-3 h3{
-	-webkit-animation: fadeInRight 1500ms ease-in-out;
-    -moz-animation: fadeInRight 1500ms ease-in-out;
-    -ms-animation: fadeInRight 1500ms ease-in-out;
-    animation: fadeInRight 1500ms ease-in-out;
 }

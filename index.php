@@ -6,8 +6,11 @@ require 'vendor/autoload.php';
 
 ?>
 
+<!-- Start header.php -->
 
 
+
+<!--  END Header php -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,37 +63,20 @@ require 'vendor/autoload.php';
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.php"><span>Multi</span>Cooler</a></h1>
+<!--          <img class="title2" src="assets/img/logo/logo.png"  width="200px" height="300px" alt="">-->
+
+<!--        <h1 class="text-light"><a href="index.php"><span>Multi</span>Cooler</a></h1>-->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+         <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header">Home</a></li>
-          <li><a href="store.html">Store</a></li>
+          <li><a href="store.php">Store</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-
-
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -102,8 +88,6 @@ require 'vendor/autoload.php';
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
         <img src="assets/img/slider/slider5.png" alt="" title="#slider-direction-1" />
-        <img src="assets/img/slider/slider5.png" alt="" title="#slider-direction-2" />
-        <img src="assets/img/slider/slider5.png" alt="" title="#slider-direction-3" />
       </div>
 
       <!-- direction 1 -->
@@ -111,19 +95,19 @@ require 'vendor/autoload.php';
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
+<!--                verander dit voor de tekst hoger of lager te zetten:-->
               <div class="slider-content">
                 <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                <div class="layer-1-1 hidden-xs">
                   <h2 class="title1">The most diverse & profound coolbox on the market</h2>
                 </div>
                 <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">MultiCooler</h1>
+                <div class="layer-1-2">
+                  <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo-slider"></a>
                 </div>
                 <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                <div class="layer-1-3 hidden-xs">
+                  <a class="ready-btn right-btn page-scroll" href="#services">Checkout our store</a>
                 </div>
               </div>
             </div>
@@ -131,64 +115,11 @@ require 'vendor/autoload.php';
         </div>
       </div>
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The most diverse & profound coolbox on the market</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">MultiCooler</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">The most diverse & profound coolbox on the market</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">MultiCooler</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div><!-- End Slider -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <div id="services" class="about-area area-padding">
-
-    </div><!-- End About Section -->
 
     <!-- ======= Services Section ======= -->
     <div id="about" class="services-area area-padding">
@@ -519,7 +450,7 @@ require 'vendor/autoload.php';
               <div class="col-md-4 col-sm-4 col-xs-12">
                   <div class="contact-icon text-center">
                       <div class="single-icon">
-                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-facebook-messenger"></i>
                           <p>
                               Facebook: MultiCooler<br>
                               <span>Monday-Friday (9am-5pm)</span>
@@ -582,89 +513,7 @@ require 'vendor/autoload.php';
 
   <!-- ======= Footer ======= -->
   <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <h2><span>Multi</span>Cooler</h2>
-                </div>
-
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                    <?php for($j=1; $j<=6;$j++):?>
-                  <a href="#"><img src="assets/img/coolbox/<?=$j?>.png" alt=""></a>
-                    <?php endfor;?>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
-              </p>
-            </div>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eBusiness
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php include_once("footer.php"); ?>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -681,7 +530,6 @@ require 'vendor/autoload.php';
   <script src="assets/vendor/appear/jquery.appear.js"></script>
   <script src="assets/vendor/knob/jquery.knob.js"></script>
   <script src="assets/vendor/parallax/parallax.js"></script>
-  <script src="assets/vendor/wow/wow.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>

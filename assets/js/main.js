@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
 (function($) {
   "use strict";
 
@@ -115,7 +117,7 @@
   /*----------------------------
    wow js active
   ------------------------------ */
-  new WOW().init();
+
 
   $(".navbar-collapse a:not(.dropdown-toggle)").on('click', function() {
     $(".navbar-collapse.collapse").removeClass('in');
@@ -309,5 +311,10 @@
     AOS.init({
         duration: 600
     });
+
+  // enable fontawesome: on pseudo:
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
 
 })(jQuery);
