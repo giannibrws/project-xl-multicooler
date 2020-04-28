@@ -227,7 +227,7 @@ require 'vendor/autoload.php';
               <div class="services-details">
                 <div class="single-services">
                   <a class="services-icon" href="#">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-users"></i>
                   </a>
                   <h4>Wie wij zijn: </h4>
                   <p>
@@ -698,7 +698,7 @@ require 'vendor/autoload.php';
 
 <?php
 
-if($_SESSION['notifications']['form-succes']){
+if(isset($_SESSION['notifications']['form-succes']) && ($_SESSION['notifications']['form-succes'])){
     ?><script>
         jQuery(document).ready(function($) {
             $('.sent-message').show();
