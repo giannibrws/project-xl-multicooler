@@ -87,7 +87,8 @@ require 'vendor/autoload.php';
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="assets/img/slider/slider5.png" alt="" title="#slider-direction-1" />
+          <!-- @info: slider for the coolbox: -->
+        <img src="assets/img/slider/ice-bg3.png" alt="" title="#slider-direction-1" />
       </div>
 
       <!-- direction 1 -->
@@ -204,7 +205,7 @@ require 'vendor/autoload.php';
         </div>
         <div class="work-right-text text-center">
           <h2>De Multicooler</h2>
-          <h5>Web Design, Ready Home, Construction and Co-operate Outstanding Buildings.</h5>
+          <h5>De all-in-one coolbox, met verschillende opties, voor een efficiënter en comfortabeler leven.</h5>
           <a href="#contact" class="ready-btn scrollto">Contact us</a>
         </div>
       </div>
@@ -316,27 +317,28 @@ require 'vendor/autoload.php';
                   <div class="single-testi">
                     <div class="testi-text">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
-                      </p>
-                      <h6>Boby</h6>
+                          Beste coolbox die ik ooit heb gebruikt, ik zou niks anders meer willen. <br>Ideaal voor alle omstandigheden.
+                      <h6>Sjaak</h6>
                     </div>
                   </div>
                   <!-- End single item -->
                   <div class="single-testi">
                     <div class="testi-text">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                          Mijn vriendinnen en ik zijn ermee naar een festival gegaan en iedereen was aangenaam verrast door dit product.
+                          <br>Ideaal voor elke festivalganger.
                       </p>
-                      <h6>Jhon</h6>
+                      <h6>Marie</h6>
                     </div>
                   </div>
                   <!-- End single item -->
                   <div class="single-testi">
                     <div class="testi-text">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar luctus est eget congue.<br>consectetur adipiscing elit. Sed pulvinar luctus est eget congue.
+                          Ik ga vaak picknicken met mijn vrouw en twee kinderen. <br>
+                          Sinds ik dit product heb aangeschaft is mijn ervaring veel aangenamer dan ooit tevoren.
                       </p>
-                      <h6>Fleming</h6>
+                      <h6>Peter</h6>
                     </div>
                   </div>
                   <!-- End single item -->
@@ -397,8 +399,8 @@ require 'vendor/autoload.php';
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
-              <h3>Want to order in bulk?</h3>
-              <a class="sus-btn" href="#">Request a quote</a>
+              <h3>Want to check out our pricing table?</h3>
+                <a class="sus-btn" href="#">Click here</a>
             </div>
           </div>
         </div>

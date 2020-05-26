@@ -248,7 +248,7 @@
     $container.isotope({
       filter: '*',
       animationOptions: {
-        duration: 750,
+        duration: 1250,
         easing: 'linear',
         queue: false
       }

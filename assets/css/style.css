@@ -336,7 +336,7 @@ div#preloader {
 }
 
 .header-bg {
-  background: url(../img/slider/slider1.jpg);
+  background: url(../img/slider/ice-bg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -1425,7 +1425,7 @@ preview-1
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials-area {
-  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top/cover;
+  background: url("../img/blue-bg.png") no-repeat fixed center top/cover;
   height: auto;
   width: 100%;
 }
@@ -1438,7 +1438,7 @@ preview-1
 }
 
 .testi-overly {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
   height: 100%;
   left: 0;
   position: absolute;

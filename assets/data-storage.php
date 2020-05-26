@@ -14,3 +14,16 @@ $questions = array(
     multicooler gekocht hebt. Deze zal het product opsturen naar onze productiefaciliteit.   Wanneer het defect veroorzaakt blijkt te zijn door een productiefout zal uw 
     multicooler gratis gerepareerd worden."
 );
+
+
+
+//  "id" => array("title", "tag", "href", "category")
+$products = array(
+        "0" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
+        "1" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "los-product"),
+        "2" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
+        "3" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
+        "4" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
+        "5" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
+        "6" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
+);
