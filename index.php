@@ -108,7 +108,7 @@ require 'vendor/autoload.php';
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Checkout our store</a>
+                  <a class="ready-btn right-btn page-scroll" href="store.php">Checkout our store</a>
                 </div>
               </div>
             </div>

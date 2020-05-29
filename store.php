@@ -98,8 +98,8 @@ require 'vendor/autoload.php';
                             </div>
                             <!-- layer 3 -->
                             <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                <a class="ready-btn page-scroll" href="#about">Learn More</a>
+                                <a class="ready-btn right-btn page-scroll" href="#pricing">See Services</a>
+                                <a class="ready-btn page-scroll" href="index.php#about">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +259,7 @@ require 'vendor/autoload.php';
                             <li class="check cross">Temperatuurmeter/display  </li>
                             <li class="check cross">Powerbank optie </li>
                         </ol>
-                        <button>Order now</button>
+<!--                        <button>Order now</button>-->
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
@@ -277,7 +277,7 @@ require 'vendor/autoload.php';
                             <li class="check ">Temperatuurmeter/display  </li>
                             <li class="check ">Powerbank optie </li>
                         </ol>
-                        <button>Order now</button>
+<!--                        <button>Order now</button>-->
                     </div>
                 </div>
             </div>
