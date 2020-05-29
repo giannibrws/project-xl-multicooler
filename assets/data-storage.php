@@ -19,11 +19,11 @@ $questions = array(
 
 //  "id" => array("title", "tag", "href", "category")
 $products = array(
-        "0" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
-        "1" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "los-product"),
-        "2" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
-        "3" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "all-in-one"),
-        "4" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
-        "5" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
+        "0" => array("Multicooler-standard", "De volledige set inclusief standaard accessoires", "../img/store/1.png", "all-in-one"),
+        "1" => array("Multicooler-basic", "De standaard versie exclusief accessoires", "../img/store/1.png", "los-product"),
+        "2" => array("Multicooler-premium", "De volledige set inclusief standaard & premium accessoires", "../img/store/1.png", "all-in-one"),
+        "3" => array("Bekerhouder-accessoire", "", "../img/store/1.png", "kliksystemen"),
+        "4" => array("Bestekhouder-accessoire", "", "../img/store/1.png", "kliksystemen"),
+        "5" => array("Bordhouder-accessoire", "", "../img/store/1.png", "kliksystemen"),
         "6" => array("Multicooler-compleet", "De volledige set met alles erop en eraan", "../img/store/1.png", "kliksystemen"),
 );

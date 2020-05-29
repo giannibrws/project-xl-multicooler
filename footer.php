@@ -1,13 +1,12 @@
 <div class="footer-area-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-4 col-xs-4">
-                <div class="footer-logo">
-                    <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo darkened"></a>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="footer-logo text-center">
+                    <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo darkened "></a>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-0 col-xs-0"></div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="copyright text-center">
                     <p>
                         &copy; Copyright <strong>eBusiness</strong>. All Rights Reserved
@@ -23,9 +22,8 @@
                     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-0 col-xs-0"></div>
-            <div class="col-md-2 col-sm-4 col-xs-4">
-                <div class="footer-icons">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="footer-icons text-center">
                     <ul>
                         <li>
                             <a href="#"><i class="fab fa-facebook"></i></a>

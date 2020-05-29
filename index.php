@@ -212,91 +212,9 @@ require 'vendor/autoload.php';
     </div><!-- End Rviews Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="portfolio-area area-padding fix">
+    <div id="portfolio" class="portfolio-area area-padding-3 fix">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Our Portfolio</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row wesome-project-1 fix">
-          <!-- Start Portfolio -page -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="awesome-menu ">
-              <ul class="project-menu">
-                <li>
-                  <a href="#" class="active" data-filter="*">All</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".development">Development</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".design">Design</a>
-                </li>
-                <li>
-                  <a href="#" data-filter=".photo">Photoshop</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="row awesome-project-content">
-          <!-- single-awesome-project start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 design development">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="assets/img/coolbox/2.png" alt="" /></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="venobox" data-gall="myGallery" href="assets/img/coolbox/2.png">
-                      <h4>Business edition</h4>
-                      <span>Met tafeltje</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single-awesome-project end -->
-          <!-- single-awesome-project start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 photo">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="assets/img/coolbox/6.png" alt="" /></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="venobox" data-gall="myGallery" href="assets/img/coolbox/6.png">
-                      <h4>Fresh</h4>
-                      <span>Appelblauw zeegroen</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single-awesome-project end -->
-          <!-- single-awesome-project start -->
-          <div class="col-md-4 col-sm-4 col-xs-12 design">
-            <div class="single-awesome-project">
-              <div class="awesome-img">
-                <a href="#"><img src="assets/img/coolbox/3.png" alt="" /></a>
-                <div class="add-actions text-center">
-                  <div class="project-dec">
-                    <a class="venobox" data-gall="myGallery" href="assets/img/coolbox/3.png">
-                      <h4>Suit to your needs</h4>
-                      <span>Optimize your exerpience</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- single-awesome-project end -->
-
-        </div>
       </div>
     </div><!-- End Portfolio Section -->
 
@@ -399,8 +317,8 @@ require 'vendor/autoload.php';
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
-              <h3>Want to check out our pricing table?</h3>
-                <a class="sus-btn" href="#">Click here</a>
+              <h3>For more information about our products</h3>
+                <a class="sus-btn" href="store.php">Click here</a>
             </div>
           </div>
         </div>

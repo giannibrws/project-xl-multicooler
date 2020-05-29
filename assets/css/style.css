@@ -187,10 +187,14 @@ body {
   transition: background 0.5s;
 }
 
+ /* ipad*/
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
   }
+    .footer-logo{
+        margin-left:2.7rem !important;
+    }
 }
 
 .back-to-top:focus {
@@ -246,6 +250,10 @@ div#preloader {
 
 .area-padding-2 {
   padding: 70px 0px 50px;
+}
+
+.area-padding-3 {
+  padding: 40px 0px 50px;
 }
 
 .padding-2 {
@@ -2394,13 +2402,37 @@ span.email-notes {
   .work-right-text {
     padding: 150px 150px;
   }
+
+}
+
+@media (min-width: 1170px) and (max-width: 1450px) {
+    .slider-content {
+        padding: 100px 0;
+    }
+    a.ready-btn.page-scroll{
+        display:none !important;
+    }
 }
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
+
   .slider-content {
-    padding: 50px 0;
+    padding: 100px 0;
   }
+    .slider-content h2 {
+        font-size: 18px !important;
+    }
+    a.ready-btn.page-scroll{
+        display:none !important;
+    }
+
+    .img-logo-slider{
+        width:30%;
+        height:30%;
+    }
+
+
   .work-right-text {
     padding: 40px 0;
   }
@@ -2412,6 +2444,24 @@ span.email-notes {
 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+
+
+
+    .slider-content h2 {
+        font-size: 18px !important;
+    }
+    a.ready-btn.page-scroll{
+        display:none !important;
+    }
+
+    .img-logo-slider{
+        width:30%;
+        height:30%;
+    }
+
+
+
+
   .layer-1-1 h2 {
     font-size: 24px;
   }
@@ -2501,7 +2551,25 @@ span.email-notes {
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
-  .slider-area {
+
+    .slider-content {
+        padding: 40px 0;
+    }
+
+    .slider-content h2 {
+        font-size: 18px !important;
+    }
+    a.ready-btn.page-scroll{
+        display:none !important;
+    }
+
+    .img-logo-slider{
+        width:50%;
+        height:50%;
+    }
+
+
+    .slider-area {
     margin-top: 60px;
   }
   .slider-content {
@@ -2617,6 +2685,11 @@ span.email-notes {
 
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .slider-content {
+        padding: 10px 0;
+    }
+
   .submitbtn {
     float: none;
     width: 99.8%;
@@ -2642,6 +2715,12 @@ span.email-notes {
 }
 
 @media (max-width: 575px) {
+
+    .slider-content h2 {
+        font-size: 14px !important;
+    }
+
+
   .slider-content {
     padding: 0;
   }

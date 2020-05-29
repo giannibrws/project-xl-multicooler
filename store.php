@@ -187,7 +187,7 @@ require 'vendor/autoload.php';
                                 <a href="#" data-filter=".los-product">Los-product</a>
                             </li>
                             <li>
-                                <a href="#" data-filter=".kliksystemen">Kliksystemen</a>
+                                <a href="#" data-filter=".kliksystemen">Accessoires</a>
                             </li>
                         </ul>
                     </div>
@@ -212,10 +212,10 @@ require 'vendor/autoload.php';
                    <div class="col-md-4 col-sm-4 col-xs-12 <?= $category?>">
                        <div class="single-awesome-project">
                            <div class="awesome-img">
-                               <a href="#"><img src="assets/img/store/<?=$val?>.png" alt="" /></a>
+                               <a href="#"><img src="assets/img/store/new/<?=$val?>.png" alt="" /></a>
                                <div class="add-actions text-center">
                                    <div class="project-dec">
-                                       <a class="venobox" data-gall="myGallery" href="assets/img/store/<?=$val?>.png">
+                                       <a class="venobox" data-gall="myGallery" href="assets/img/store/new/<?=$val?>.png">
                                            <h4><?= $title ?></h4>
                                            <span><?= $tag ?></span>
                                        </a>
@@ -237,7 +237,7 @@ require 'vendor/autoload.php';
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="section-headline text-center">
-                        <h2>Pricing Table</h2>
+                        <h2>Product Specificaties</h2>
                     </div>
                 </div>
             </div>
@@ -246,7 +246,7 @@ require 'vendor/autoload.php';
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="pri_table_list active">
                         <span class="saleon">top sale</span>
-                        <h3>standaard <br /> <span>$110,00</span></h3>
+                        <h3>standaard <br /> <span></span></h3>
                         <ol>
                             <li class="check">Standaard koelfunctie  </li>
                             <li class="check">Beker/Bord/Bestekhouder  </li>
@@ -264,7 +264,7 @@ require 'vendor/autoload.php';
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="pri_table_list">
-                        <h3>premium <br /> <span>$150,00</span></h3>
+                        <h3>premium <br /> <span></span></h3>
                         <ol>
                             <li class="check">Standaard koelfunctie  </li>
                             <li class="check">Beker/Bord/Bestekhouder  </li>
@@ -293,8 +293,8 @@ require 'vendor/autoload.php';
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
                     <div class="suscribe-text text-center">
-                        <h3>Want to order in bulk?</h3>
-                        <a class="sus-btn" href="#">Request a quote</a>
+                        <h3>Check out our kickstarter</h3>
+                        <a class="sus-btn" href="#">Click here</a>
                     </div>
                 </div>
             </div>
