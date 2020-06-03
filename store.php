@@ -5,6 +5,21 @@ include_once "assets/data-storage.php";
 require 'vendor/autoload.php';
 
 
+if(!isset($_SESSION['selected']['value'])){
+    $_SESSION['selected']['value'] = "metallic";
+    $_SESSION['selected']['isset'] = false;
+}
+
+if(isset($_POST['color-selection'])){
+    $_SESSION['selected']['isset'] = true;
+    $_SESSION['selected']['value'] = $_POST['color-selection'];
+}
+
+
+//echo __FILE__.__LINE__.__FUNCTION__.'<br />';
+//echo '<pre>';
+//var_dump($_SESSION['selected']['value']);
+//echo '</pre>';
 
 
 ?>
@@ -89,15 +104,15 @@ require 'vendor/autoload.php';
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="slider-content">
                             <!-- layer 1 -->
-                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
+                            <div class="layer-1-1 hidden-xs">
                                 <h2 class="title1">The most diverse & profound coolbox on the market</h2>
                             </div>
                             <!-- layer 2 -->
-                            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                            <div class="layer-1-2">
                                 <a href="index.php"><img src="assets/img/logo/logo.png" alt="" class="img-logo-slider"></a>
                             </div>
                             <!-- layer 3 -->
-                            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+                            <div class="layer-1-3 hidden-xs">
                                 <a class="ready-btn right-btn page-scroll" href="#pricing">See Services</a>
                                 <a class="ready-btn page-scroll" href="index.php#about">Learn More</a>
                             </div>
@@ -107,55 +122,6 @@ require 'vendor/autoload.php';
             </div>
         </div>
 
-        <!-- direction 2 -->
-        <div id="slider-direction-2" class="slider-direction slider-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="slider-content text-center">
-                            <!-- layer 1 -->
-                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                                <h2 class="title1">The most diverse & profound coolbox on the market</h2>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                <h1 class="title2">MultiCooler</h1>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- direction 3 -->
-        <div id="slider-direction-3" class="slider-direction slider-two">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="slider-content">
-                            <!-- layer 1 -->
-                            <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                                <h2 class="title1">The most diverse & profound coolbox on the market</h2>
-                            </div>
-                            <!-- layer 2 -->
-                            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                                <h1 class="title2">MultiCooler</h1>
-                            </div>
-                            <!-- layer 3 -->
-                            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                                <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                                <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div><!-- End Slider -->
 
@@ -177,7 +143,7 @@ require 'vendor/autoload.php';
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="awesome-menu ">
                         <ul class="project-menu">
-                            <li>
+                            <li class="menu-first-item">
                                 <a href="#" class="active" data-filter="*">Alles</a>
                             </li>
                             <li>
@@ -186,27 +152,52 @@ require 'vendor/autoload.php';
                             <li>
                                 <a href="#" data-filter=".los-product">Los-product</a>
                             </li>
-                            <li>
+                            <li class="nav-assec">
                                 <a href="#" data-filter=".kliksystemen">Accessoires</a>
+                            </li>
+                            <li class="colorpicker-nav">
+                                <form method="post" id="myform" action="store.php#portfolio">
+                                    <select name='color-selection' id="myfield">
+                                        <option disabled selected value="<?= isset($_SESSION['selected']['value'])  ?  $_SESSION['selected']['value'] : '' ?>">
+                                            <?=  $_SESSION['selected']['isset'] ? $_SESSION['selected']['value'] : 'Kleur-type' ?></option>
+                                        <option value="metallic">Metallic</option>
+                                        <option value="rood">Rood</option>
+                                        <option value="groen">Groen</option>
+                                    </select>
+                                </form>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
+
             <!-- ## start of product reel -->
             <div class="row awesome-project-content">
 
             <?php
+            // show max 6 photos at the start:
+            $limit = 5;
 
                foreach($products as $idx => $singleProduct):
-
                    $val = $idx +1;
+               // break loop:
 
-                        $title = $singleProduct[0];
-                        $tag = $singleProduct[1];
-                        $href = $singleProduct[2];
-                        $category = $singleProduct[3]; ?>
+                    $title = $singleProduct[0];
+                    $tag = $singleProduct[1];
+                    $href = $singleProduct[2];
+                    $category = $singleProduct[3];
+
+
+                    if(isset($_SESSION['selected']['value']) && $_SESSION['selected']['value'] != "metallic"){
+                    // append href with folder of designated value:
+                            strval($val);
+                            $val = $_SESSION['selected']['value'] . "/" . $val;
+                    }
+
+               ?>
+
+
 
                    <!-- single-awesome-project start -->
                    <div class="col-md-4 col-sm-4 col-xs-12 <?= $category?>">
@@ -434,5 +425,14 @@ require 'vendor/autoload.php';
 <script src="assets/js/main.js"></script>
 
 </body>
+
+<script>
+    $('#myfield').bind('change', function () {
+        //post
+        $("#myform").submit();
+    });
+
+
+</script>
 
 </html>

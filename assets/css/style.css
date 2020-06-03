@@ -2395,6 +2395,54 @@ span.email-notes {
   text-align: center;
 }
 
+
+
+.menu-first-item{
+  margin-left:9rem;
+}
+
+.colorpicker-nav{
+  margin-left:3rem;
+}
+
+
+
+
+
+form select{
+
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #444;
+  border-radius: 20px;
+  color: #444;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 4px;
+  font-weight: 500;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Responsive
 --------------------------------------------------------------*/
@@ -2405,8 +2453,29 @@ span.email-notes {
 
 }
 
+@media (min-width: 116px) and (max-width: 1020px) {
+    .menu-first-item, li.colorpicker-nav{
+      margin-left:0px;
+    }
+
+}
+@media (min-width: 116px) and (max-width: 782px) {
+
+  .project-menu{
+    margin: 0 auto;
+    width:70%;
+  }
+
+  .project-menu li{
+    padding-top:0.3rem;
+  }
+}
+
+
+
 @media (min-width: 1170px) and (max-width: 1450px) {
-    .slider-content {
+
+  .slider-content {
         padding: 100px 0;
     }
     a.ready-btn.page-scroll{
@@ -2416,6 +2485,7 @@ span.email-notes {
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1169px) {
+
 
   .slider-content {
     padding: 100px 0;
@@ -2444,8 +2514,6 @@ span.email-notes {
 
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
 
     .slider-content h2 {
         font-size: 18px !important;
