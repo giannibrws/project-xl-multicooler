@@ -150,7 +150,7 @@
   });
 
   /*---------------------
-    Venobox
+    Venobox (Script for store slider goes here):
   --------------------- */
   var veno_box = $('.venobox');
   veno_box.venobox();

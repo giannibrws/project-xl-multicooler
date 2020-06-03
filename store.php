@@ -195,18 +195,24 @@ if(isset($_POST['color-selection'])){
                             $val = $_SESSION['selected']['value'] . "/" . $val;
                     }
 
+                   $division = "";
+                   if(!empty($tag)){
+                       $division = "-";
+                   }
+
+
                ?>
-
-
 
                    <!-- single-awesome-project start -->
                    <div class="col-md-4 col-sm-4 col-xs-12 <?= $category?>">
                        <div class="single-awesome-project">
                            <div class="awesome-img">
-                               <a href="#"><img src="assets/img/store/new/<?=$val?>.png" alt="" /></a>
+                               <a href="#" data-title="Breakfast Recipe - Basik" >
+                                   <img src="assets/img/store/new/<?=$val?>.png" class="" alt="" />
+                               </a>
                                <div class="add-actions text-center">
                                    <div class="project-dec">
-                                       <a class="venobox" data-gall="myGallery" href="assets/img/store/new/<?=$val?>.png">
+                                       <a class="venobox" data-gall="myGallery"  title="<?= "<b>" . $title . "</b>" . " $division " . $tag  ?>" href="assets/img/store/new/<?=$val?>.png">
                                            <h4><?= $title ?></h4>
                                            <span><?= $tag ?></span>
                                        </a>
