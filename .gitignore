@@ -1,0 +1,8 @@
+## IGNORE FOLDERS: ##
+vendor/
+node_modules/
+npm-debug.log
+
+## customData ##
+forms/contact.php
+

@@ -200,7 +200,7 @@ require 'vendor/autoload.php';
       <div class="work-us">
         <div class="work-left-text">
           <a href="#">
-            <img src="assets/img/coolbox/1.png" alt="">
+            <img src="assets/img/store/new/3.png" alt="">
           </a>
         </div>
         <div class="work-right-text text-center">
@@ -359,7 +359,7 @@ require 'vendor/autoload.php';
                 <div class="single-icon">
                   <i class="fas fa-envelope"></i>
                   <p>
-                    Email: info@multicooler.com<br>
+                    Email: info.multicooler@gmail.com<br>
                     <span>(Max 1week response time)</span>
                   </p>
                 </div>

@@ -1,0 +1,25 @@
+{
+  "name": "multicooler-website",
+  "version": "1.0.0",
+  "description": "Devdependencies",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-foreach": "^0.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gianni742/project-xl-multicooler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gianni742/project-xl-multicooler/issues"
+  },
+  "homepage": "https://github.com/Gianni742/project-xl-multicooler#readme"
+}

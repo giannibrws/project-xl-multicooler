@@ -248,7 +248,6 @@ if(isset($_POST['color-selection'])){
                             <li class="check">Standaard koelfunctie  </li>
                             <li class="check">Beker/Bord/Bestekhouder  </li>
                             <li class="check">Flessenopener (Add-on) </li>
-                            <li class="check">Multiple slider </li>
                             <li class="check">Parasolhouder (Add-on) </li>
                             <li class="check">Uitklapbare tafel (Add-on) </li>
                             <li class="check ">Waterbestendigheid  </li>
@@ -266,7 +265,6 @@ if(isset($_POST['color-selection'])){
                             <li class="check">Standaard koelfunctie  </li>
                             <li class="check">Beker/Bord/Bestekhouder  </li>
                             <li class="check">Flessenopener (Add-on) </li>
-                            <li class="check">Multiple slider </li>
                             <li class="check">Parasolhouder (Add-on) </li>
                             <li class="check">Uitklapbare tafel (Add-on) </li>
                             <li class="check ">Waterbestendigheid  </li>
@@ -332,7 +330,7 @@ if(isset($_POST['color-selection'])){
                             <div class="single-icon">
                                 <i class="fas fa-envelope"></i>
                                 <p>
-                                    Email: info@multicooler.com<br>
+                                    Email: info.multicooler@gmail.com<br>
                                     <span>(Max 1week response time)</span>
                                 </p>
                             </div>
