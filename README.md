@@ -9,3 +9,9 @@ Made for Project-XL
 
 
 
+
+## Setup
+
+```
+composer install
+```
