@@ -197,6 +197,13 @@ if(isset($_POST['color-selection']) && in_array($_POST['color-selection'], $allo
                             $val = $_SESSION['selected']['value'] . "/" . $val;
                     }
 
+                   // fallback when a product has no image of its own (e.g. product 7):
+                   if(!file_exists(__DIR__ . "/assets/img/store/new/" . $val . ".png")){
+                       $val = (isset($_SESSION['selected']['value']) && $_SESSION['selected']['value'] != "metallic")
+                           ? $_SESSION['selected']['value'] . "/1"
+                           : 1;
+                   }
+
                    $division = "";
                    if(!empty($tag)){
                        $division = "-";
@@ -421,7 +428,6 @@ if(isset($_POST['color-selection']) && in_array($_POST['color-selection'], $allo
 <script src="assets/vendor/appear/jquery.appear.js"></script>
 <script src="assets/vendor/knob/jquery.knob.js"></script>
 <script src="assets/vendor/parallax/parallax.js"></script>
-<script src="assets/vendor/wow/wow.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/nivo-slider/js/jquery.nivo.slider.js"></script>
 <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
