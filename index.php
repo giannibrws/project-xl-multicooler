@@ -403,7 +403,7 @@ require 'vendor/autoload.php';
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" value="<?= isset($_POST['email']) ? $_POST['email'] : ' '?>" />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" value="<?= isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '' ?>" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">

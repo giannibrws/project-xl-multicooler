@@ -16,7 +16,13 @@ use Dotenv\Dotenv;
 
 // @info: to access .env files use the $_ENV superglobal.
 $dotenv = Dotenv::createImmutable(dirname( __DIR__));
-$dotenv->load();
+$dotenv->safeLoad();
+
+if(empty($_ENV['GMAIL_USERNAME']) || empty($_ENV['GMAIL_PASSWORD'])){
+    error_log('contact.php: GMAIL_USERNAME / GMAIL_PASSWORD missing in .env');
+    echo 'Message could not be sent.';
+    exit;
+}
 
 $mail = new PHPMailer();
 
@@ -29,11 +35,15 @@ $post_data = array("name"=>"",
 
 // Validate post data:
 
-$j =0;
-$keys = array_keys($post_data);
-foreach($_POST as $input){
-    $post_data[$keys[$j]] = filterInput($input);
-    $j++;
+foreach(array_keys($post_data) as $key){
+    if(isset($_POST[$key]) && is_string($_POST[$key])){
+        $post_data[$key] = filterInput($_POST[$key]);
+    }
+}
+
+if(!filter_var($post_data['email'], FILTER_VALIDATE_EMAIL)){
+    echo 'Please enter a valid email address.';
+    exit;
 }
 
 // USING SMTP:
@@ -44,25 +54,24 @@ $mail->Username = $_ENV['GMAIL_USERNAME'];
 $mail->Password = $_ENV['GMAIL_PASSWORD'];
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->SMTPDebug = 2;
+$mail->SMTPDebug = 0; // never output the SMTP conversation (contains credentials) to the browser
 
 
-$mail->setFrom($post_data['email'], $post_data['name']);
-// Email senders email:
-$mail->addAddress($_ENV['GMAIL_USERNAME'], 'MultiCooler-Website');     // Add a recipient
-//  $mail->addReplyTo('towho@example.com', 'John Doe';
+// Send from our own account (Gmail rejects/spoofs other senders), replies go to the visitor:
+$mail->setFrom($_ENV['GMAIL_USERNAME'], 'MultiCooler-Website');
+$mail->addAddress($_ENV['GMAIL_USERNAME'], 'MultiCooler-Website');
+$mail->addReplyTo($post_data['email'], $post_data['name']);
 
 $mail->isHTML(true);
 $mail->Subject = $post_data['subject'];
 $mail->Body = $post_data['message'];
-$mail->AltBody = 'This is the plain text version of the email content';
+$mail->AltBody = html_entity_decode($post_data['message']);
 
 if(!$mail->send()){
+    error_log('Mailer Error: ' . $mail->ErrorInfo);
     echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
 }else {
     $_SESSION['notifications']['form-succes'] = true;
-    echo 'Message has been sent';
 
     header('Location: ../index.php#contact');
     exit;

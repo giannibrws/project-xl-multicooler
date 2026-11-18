@@ -10,7 +10,9 @@ if(!isset($_SESSION['selected']['value'])){
     $_SESSION['selected']['isset'] = false;
 }
 
-if(isset($_POST['color-selection'])){
+$allowedColors = array("metallic", "rood", "groen");
+
+if(isset($_POST['color-selection']) && in_array($_POST['color-selection'], $allowedColors, true)){
     $_SESSION['selected']['isset'] = true;
     $_SESSION['selected']['value'] = $_POST['color-selection'];
 }
@@ -158,8 +160,8 @@ if(isset($_POST['color-selection'])){
                             <li class="colorpicker-nav">
                                 <form method="post" id="myform" action="store.php#portfolio">
                                     <select name='color-selection' id="myfield">
-                                        <option disabled selected value="<?= isset($_SESSION['selected']['value'])  ?  $_SESSION['selected']['value'] : '' ?>">
-                                            <?=  $_SESSION['selected']['isset'] ? $_SESSION['selected']['value'] : 'Kleur-type' ?></option>
+                                        <option disabled selected value="<?= htmlspecialchars($_SESSION['selected']['value']) ?>">
+                                            <?= $_SESSION['selected']['isset'] ? htmlspecialchars($_SESSION['selected']['value']) : 'Kleur-type' ?></option>
                                         <option value="metallic">Metallic</option>
                                         <option value="rood">Rood</option>
                                         <option value="groen">Groen</option>
